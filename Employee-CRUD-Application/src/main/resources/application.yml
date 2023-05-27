@@ -1,0 +1,7 @@
+server:
+  port: 8080
+  
+spring:  application:    name: Employee-CRUD-App
+      data:    mongodb:      host: localhost
+      port: 27017
+      database: EmployeeDB
