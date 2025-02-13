@@ -3,7 +3,12 @@ server:
 
 spring:
   datasource:
-    url: jdbc:h2:mem:productDB
-  h2:
-    console:
-      enabled: true
+    url: jdbc:postgresql://localhost:5432/ProductDB
+    username: postgres
+    password: vani
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
